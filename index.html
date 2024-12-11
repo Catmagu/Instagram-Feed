@@ -75,117 +75,127 @@
             </div>
         </div>
     </div>
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="fa-solid fa-table-cells"></i>
-            </a>
+    <ul class="nav justify-content-center nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                    class="fa-solid fa-table-cells"></i></button>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="fa-solid fa-square"></i>
-            </a>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                    class="fa-solid fa-square"></i></button>
         </li>
+
     </ul>
-    <div class="contenedor">
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">cuadricula</div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="contenedor">
 
-        <div class="card" style="width: 36rem;">
-            <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
-                <h5 class="card-title m-0">Halong Bay</h5>
-                <h6 class="card-subtitle m-0 text-body-secondary">08/02</h6>
-            </div>
-            <img src="imagenes/casaBote.JPG" class="card-img-top" alt="Paseo">
-            <div class="card-body">
-                <p class="card-text">Paseo Bahía Halong Bay, casa bote.</p>
-            </div>
-        </div>
+                <div class="card" style="width: 36rem;">
+                    <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                        <h5 class="card-title m-0">Halong Bay</h5>
+                        <h6 class="card-subtitle m-0 text-body-secondary">08/02</h6>
+                    </div>
+                    <img src="imagenes/casaBote.JPG" class="card-img-top" alt="Paseo">
+                    <div class="card-body">
+                        <p class="card-text">Paseo Bahía Halong Bay, casa bote.</p>
+                    </div>
+                </div>
 
-        <div class="card" style="width: 36rem;">
-            <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
-                <h5 class="card-title m-0">Templo Bangok</h5>
-                <h6 class="card-subtitle m-0 text-body-secondary">11/02</h6>
-            </div>
-            <img src="imagenes/escaleraTemplo.JPG" class="card-img-top" alt="escalera templo">
-            <div class="card-body">
-                <p class="card-text">Escalera acceso templo Bangok.</p>
-            </div>
-        </div>
+                <div class="card" style="width: 36rem;">
+                    <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                        <h5 class="card-title m-0">Templo Bangok</h5>
+                        <h6 class="card-subtitle m-0 text-body-secondary">11/02</h6>
+                    </div>
+                    <img src="imagenes/escaleraTemplo.JPG" class="card-img-top" alt="escalera templo">
+                    <div class="card-body">
+                        <p class="card-text">Escalera acceso templo Bangok.</p>
+                    </div>
+                </div>
 
-        <div class="card" style="width: 36rem;">
-            <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
-                <h5 class="card-title m-0">Atardecer playa</h5>
-                <h6 class="card-subtitle m-0 text-body-secondary">22/03</h6>
-            </div>
-            <img src="imagenes/KataBeach.JPG" class="card-img-top" alt="atardecer playa Phuket">
-            <div class="card-body">
-                <p class="card-text">Hermoso Atardecer Kata beach en Phuket.</p>
-            </div>
-        </div>
+                <div class="card" style="width: 36rem;">
+                    <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                        <h5 class="card-title m-0">Atardecer playa</h5>
+                        <h6 class="card-subtitle m-0 text-body-secondary">22/03</h6>
+                    </div>
+                    <img src="imagenes/KataBeach.JPG" class="card-img-top" alt="atardecer playa Phuket">
+                    <div class="card-body">
+                        <p class="card-text">Hermoso Atardecer Kata beach en Phuket.</p>
+                    </div>
+                </div>
 
-        <div class="card" style="width: 36rem;">
-            <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
-                <h5 class="card-title m-0">Paseo Kayac</h5>
-                <h6 class="card-subtitle m-0 text-body-secondary">17/03</h6>
-            </div>
-            <img src="imagenes/paseoKayac.JPG" class="card-img-top" alt="paseo en kayac">
-            <div class="card-body">
-                <p class="card-text">kayaqueando en Halong Bay.</p>
-            </div>
-        </div>
+                <div class="card" style="width: 36rem;">
+                    <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                        <h5 class="card-title m-0">Paseo Kayac</h5>
+                        <h6 class="card-subtitle m-0 text-body-secondary">17/03</h6>
+                    </div>
+                    <img src="imagenes/paseoKayac.JPG" class="card-img-top" alt="paseo en kayac">
+                    <div class="card-body">
+                        <p class="card-text">kayaqueando en Halong Bay.</p>
+                    </div>
+                </div>
 
-        <div class="card" style="width: 36rem;">
-            <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
-                <h5 class="card-title m-0">Patio Templo Dorado</h5>
-                <h6 class="card-subtitle m-0 text-body-secondary">31/01</h6>
-            </div>
-            <img src="imagenes/patioMonasterio.JPG" class="card-img-top" alt="patio templo Chang Mai">
-            <div class="card-body">
-                <p class="card-text">Patio con escritos y pensamientos budistas.</p>
-            </div>
-        </div>
+                <div class="card" style="width: 36rem;">
+                    <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                        <h5 class="card-title m-0">Patio Templo Dorado</h5>
+                        <h6 class="card-subtitle m-0 text-body-secondary">31/01</h6>
+                    </div>
+                    <img src="imagenes/patioMonasterio.JPG" class="card-img-top" alt="patio templo Chang Mai">
+                    <div class="card-body">
+                        <p class="card-text">Patio con escritos y pensamientos budistas.</p>
+                    </div>
+                </div>
 
-        <div class="card" style="width: 36rem;">
-            <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
-                <h5 class="card-title m-0">Playa Koh Phi Phi</h5>
-                <h6 class="card-subtitle m-0 text-body-secondary">08/04</h6>
-            </div>
-            <img src="imagenes/playaBarcos.JPG" class="card-img-top" alt="playa barcos Koh Phi Phi">
-            <div class="card-body">
-                <p class="card-text">Atardecer playa con barcos marea baja Koh Phi Phi.</p>
-            </div>
-        </div>
+                <div class="card" style="width: 36rem;">
+                    <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                        <h5 class="card-title m-0">Playa Koh Phi Phi</h5>
+                        <h6 class="card-subtitle m-0 text-body-secondary">08/04</h6>
+                    </div>
+                    <img src="imagenes/playaBarcos.JPG" class="card-img-top" alt="playa barcos Koh Phi Phi">
+                    <div class="card-body">
+                        <p class="card-text">Atardecer playa con barcos marea baja Koh Phi Phi.</p>
+                    </div>
+                </div>
 
-        <div class="card" style="width: 36rem;">
-            <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
-                <h5 class="card-title m-0">Zoo Tigres</h5>
-                <h6 class="card-subtitle m-0 text-body-secondary">09/03</h6>
-            </div>
-            <img src="imagenes/tigre.JPG" class="card-img-top" alt="tigre">
-            <div class="card-body">
-                <p class="card-text">Conociendo a tigre adolescente.</p>
-            </div>
-        </div>
+                <div class="card" style="width: 36rem;">
+                    <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                        <h5 class="card-title m-0">Zoo Tigres</h5>
+                        <h6 class="card-subtitle m-0 text-body-secondary">09/03</h6>
+                    </div>
+                    <img src="imagenes/tigre.JPG" class="card-img-top" alt="tigre">
+                    <div class="card-body">
+                        <p class="card-text">Conociendo a tigre adolescente.</p>
+                    </div>
+                </div>
 
-        <div class="card" style="width: 36rem;">
-            <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
-                <h5 class="card-title m-0">Templo Bangok</h5>
-                <h6 class="card-subtitle m-0 text-body-secondary">15/03</h6>
-            </div>
-            <img src="imagenes/Templo Bangok.JPG" class="card-img-top" alt="templo 344">
-            <div class="card-body">
-                <p class="card-text">Conociendo el templo de 344 peldaños.</p>
-            </div>
-        </div>
+                <div class="card" style="width: 36rem;">
+                    <div class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                        <h5 class="card-title m-0">Templo Bangok</h5>
+                        <h6 class="card-subtitle m-0 text-body-secondary">15/03</h6>
+                    </div>
+                    <img src="imagenes/Templo Bangok.JPG" class="card-img-top" alt="templo 344">
+                    <div class="card-body">
+                        <p class="card-text">Conociendo el templo de 344 peldaños.</p>
+                    </div>
+                </div>
 
-        <div class="card" style="width: 36rem;">
-            <h5 class="card-title">Metro Bangok</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">25/03</h6>
-            <img src="imagenes/metro.JPG" class="card-img-top" alt="metro">
-            <div class="card-body">
-                <p class="card-text">Metro camino al aeropuerto de Bangok.</p>
+                <div class="card" style="width: 36rem;">
+                    <h5 class="card-title">Metro Bangok</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">25/03</h6>
+                    <img src="imagenes/metro.JPG" class="card-img-top" alt="metro">
+                    <div class="card-body">
+                        <p class="card-text">Metro camino al aeropuerto de Bangok.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+   
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
