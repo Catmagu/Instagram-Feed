@@ -20,10 +20,12 @@
         }
 
         .square-img {
-      width: 100%;
-      aspect-ratio: 1/1; /* Hace que la imagen sea cuadrada */
-      object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-  }
+            width: 100%;
+            aspect-ratio: 1/1;
+            /* Hace que la imagen sea cuadrada */
+            object-fit: cover;
+            /* Asegura que la imagen cubra el área sin distorsionarse */
+        }
     </style>
 </head>
 
@@ -42,20 +44,23 @@
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item active">
                         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#newPostModal">
-                            <span class="btn btn-success">
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#newPostModal">
                                 Create a new post
-                            </span>
+                            </button>
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Menu
-                        </a>
+                        <button class="btn btn-secondary dropdown-toggle d-flex align-items-center py-2"
+                            id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fas fa-cog text-white"></i>
+                        </button>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Accesibility</a>
+                            <a class="dropdown-item" href="#">Privacy and Data</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="#">Log out</a>
                         </div>
                     </li>
                 </ul>
@@ -71,12 +76,23 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                    <!-- Puedes incluir aquí un formulario para crear un nuevo post -->
+                    <label for="exampleFormControlTextarea1" class="form-label fw-bold">Caption:</label>
+                    <textarea class="form-control text-secondary" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Add the caption of your post here"></textarea>
+                    <div class="d-flex align-items-center gap-2 mt-2">
+                        <button type="button" class="btn btn-light border rounded px-3 py-2"
+                            style="border-color: #ced4da;">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                        <button type="button" class="btn btn-light border rounded px-3 py-2"
+                            style="border-color: #ced4da;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary">Publish</button>
                 </div>
             </div>
         </div>
@@ -99,43 +115,43 @@
             tabindex="0">
             <div class="container">
                 <div class="row g-1 justify-content-center">
-                  <div class="col-4 p-1">
-                    <img src="imagenes/casaBote.JPG" class="square-img" alt="Paseo">
-                  </div>
-                  <div class="col-4 p-1">
-                    <img src="imagenes/escaleraTemplo.JPG" class="square-img" alt="escalera templo">
-                  </div>
-                  <div class="col-4 p-1">
-                    <img src="imagenes/KataBeach.JPG" class="square-img" alt="atardecer playa Phuket">
-                  </div>
+                    <div class="col-4 p-1">
+                        <img src="imagenes/casaBote.JPG" class="square-img" alt="Paseo">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="imagenes/escaleraTemplo.JPG" class="square-img" alt="escalera templo">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="imagenes/KataBeach.JPG" class="square-img" alt="atardecer playa Phuket">
+                    </div>
                 </div>
-              </div>
-              <div class="container">
+            </div>
+            <div class="container">
                 <div class="row g-1 justify-content-center">
-                  <div class="col-4 p-1">
-                    <img src="imagenes/paseoKayac.JPG" class="square-img" alt="paseo en kayac">
-                  </div>
-                  <div class="col-4 p-1">
-                    <img src="imagenes/patioMonasterio.JPG" class="square-img" alt="patio templo Chang Mai">
-                  </div>
-                  <div class="col-4 p-1">
-                    <img src="imagenes/playaBarcos.JPG" class="square-img" alt="playa barcos Koh Phi Phi">
-                  </div>
+                    <div class="col-4 p-1">
+                        <img src="imagenes/paseoKayac.JPG" class="square-img" alt="paseo en kayac">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="imagenes/patioMonasterio.JPG" class="square-img" alt="patio templo Chang Mai">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="imagenes/playaBarcos.JPG" class="square-img" alt="playa barcos Koh Phi Phi">
+                    </div>
                 </div>
-              </div>
-              <div class="container">
+            </div>
+            <div class="container">
                 <div class="row g-1 justify-content-center">
-                  <div class="col-4 p-1">
-                    <img src="imagenes/tigre.JPG" class="square-img" alt="tigre">
-                  </div>
-                  <div class="col-4 p-1">
-                    <img src="imagenes/Templo Bangok.JPG" class="square-img" alt="templo 344">
-                  </div>
-                  <div class="col-4 p-1">
-                    <img src="imagenes/metro.JPG" class="square-img" alt="metro">
-                  </div>
+                    <div class="col-4 p-1">
+                        <img src="imagenes/tigre.JPG" class="square-img" alt="tigre">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="imagenes/Templo Bangok.JPG" class="square-img" alt="templo 344">
+                    </div>
+                    <div class="col-4 p-1">
+                        <img src="imagenes/metro.JPG" class="square-img" alt="metro">
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
             <div class="contenedor">
@@ -241,7 +257,7 @@
     </div>
 
 
-   
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
